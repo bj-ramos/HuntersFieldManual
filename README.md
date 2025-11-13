@@ -1,2 +1,2 @@
-# MonsterHunterWiki
-Repo for a Monster Hunter World Wiki web app.
+# Hunter's Field Manual: Iceborne
+Repo for a fan-made, educational and non-profit resource on all things Monster Hunter World: Iceborne.

@@ -9,7 +9,7 @@ fetch("http://localhost:5000/api/monsters")
 
       div.innerHTML = `
         <img src="assets/images/${monster.image}" class="monster-img" alt="Rathalos">
-        <h2>${monster.name}</h2>
+        <h2><a href="rathalos.html">${monster.name}</a></h2>
         <p><strong>Type:</strong> ${monster.type}</p>
         <p>${monster.description}</p>
         <p><strong>Weaknesses:</strong> ${monster.weaknesses?.join(", ")}</p>
