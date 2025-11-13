@@ -3,15 +3,16 @@ fetch("http://localhost:5000/api/monsters")
   .then(monsters => {
     const container = document.getElementById("monster-list");
 
-    monsters.forEach(m => {
+    monsters.forEach(monster => {
       const div = document.createElement("div");
       div.classList.add("monster-card");
 
       div.innerHTML = `
-        <h2>${m.name}</h2>
-        <p><strong>Type:</strong> ${m.type}</p>
-        <p>${m.description}</p>
-        <p><strong>Weaknesses:</strong> ${m.weaknesses?.join(", ")}</p>
+        <img src="assets/images/${monster.image}" class="monster-img" alt="Rathalos">
+        <h2>${monster.name}</h2>
+        <p><strong>Type:</strong> ${monster.type}</p>
+        <p>${monster.description}</p>
+        <p><strong>Weaknesses:</strong> ${monster.weaknesses?.join(", ")}</p>
       `;
 
       container.appendChild(div);

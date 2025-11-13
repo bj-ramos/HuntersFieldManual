@@ -1,0 +1,12 @@
+body {
+  background: #111;
+  color: #eee;
+  font-family: Arial;
+}
+
+.monster-card {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
